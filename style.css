@@ -1,0 +1,68 @@
+/*:root criado para definir um elemento raiz, facilitando 
+a edição do codigo, caso seja necessario */
+:root{
+    --fonte-h1: 2rem;
+    --fonte-h2: 1.5rem;
+    --fonte-p: 1rem;
+    --espacamento: 1rem;
+    --background-color: rgb(194, 164, 223);
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-color:var(--background-color);
+    padding: var(--espacamento);
+}
+
+.container{
+    max-width: 800px;
+    margin: auto;
+}
+
+h1{
+    font-size: var(--fonte-h1);
+    margin-bottom: var(--espacamento);
+
+}
+
+h2{
+    font-size: var(--fonte-h2);
+    margin-top: var(--espacamento);
+    margin-bottom: calc(var(--espacamento / 2));
+
+}
+
+p {
+    font-size: var(--fonte-p);
+    line-height: 1.6rem;
+    margin-bottom: var(--espacamento);
+
+}
+/*@media para criar variações no tamanhos das telas,*/
+@media (min-width:600px){
+    :root{
+    --fonte-h1: 1.5rem;
+    --fonte-h2: 1.2rem;
+    --fonte-p: 0.9rem;
+    --espacamento: 0.8rem;
+}
+}
+
+@media (min-width:601px) and (max-width:1024px){
+    :root{
+    --fonte-h1: 2rem;
+    --fonte-h2: 1.4rem;
+    --fonte-p: 1rem;
+    --espacamento: 1rem;
+}
+}
+
+@media (min-width:1025px){
+    :root{
+    --fonte-h1: 2.5rem;
+    --fonte-h2: 2rem;
+    --fonte-p: 1.2rem;
+    --espacamento: 1.5rem;
+}
+}
