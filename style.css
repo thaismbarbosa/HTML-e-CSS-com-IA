@@ -1,5 +1,5 @@
 /*:root criado para definir um elemento raiz, facilitando 
-a edição do codigo, caso seja necessario */
+a edição do código, caso seja necessário */
 :root{
     --fonte-h1: 2rem;
     --fonte-h2: 1.5rem;
@@ -39,7 +39,7 @@ p {
     margin-bottom: var(--espacamento);
 
 }
-/*@media para criar variações no tamanhos das telas,*/
+/*@media para criar variações no tamanhos das telas*/
 @media (min-width:600px){
     :root{
     --fonte-h1: 1.5rem;
@@ -65,4 +65,5 @@ p {
     --fonte-p: 1.2rem;
     --espacamento: 1.5rem;
 }
+
 }
